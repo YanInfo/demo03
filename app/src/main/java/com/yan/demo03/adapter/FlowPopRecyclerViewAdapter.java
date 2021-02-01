@@ -41,6 +41,7 @@ public class FlowPopRecyclerViewAdapter extends RecyclerView.Adapter<FlowPopRecy
         FlowPopViewHolder vh = (FlowPopViewHolder) viewHolder;
         FiltrateBean item = mData.get(i);
         vh.tvTypeName.setText(item.getTypeName());
+        // 设置子View
         setFlowLayoutData(item.getChildren(), vh.layoutProperty);
 
     }
